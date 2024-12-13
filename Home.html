@@ -11,11 +11,20 @@
 <body>
 
     <header>
+        <div class="nav-start"> <!-- Esquerda vazia ou links adicionais --> </div>
+        <a href="Home.html" class="logo"><img src="Imagens/file.png"></a>
         <nav>
-            <span> <a href="Sobre.html" id="abas"> Sobre </a> </span>
-            <span><a href="faleconosco.html" id="abas"> Fale conosco </a> </span>
+            <span> <a href="Sobre.html" class="abas"> Sobre </a> </span>
+            <span><a href="#" class="abas" id="faleconosco-link"> Fale conosco </a> </span>
             <nav>
     </header>
+    <div id="container-link" class="hidden">
+        <ul>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+            <li><a href="contatos.html">Anuncie Aqui</a></li>
+        </ul>
+    </div>
+    
     <div class="big">
         <section>
             <div id="noticiaprincipal"> <a href="" class="linknormal"><img src="Imagens/eventocarros.png"
@@ -29,29 +38,45 @@
                     colecionadores e admiradores de carros clássicos e históricos em um só lugar, transformando a
                     capital em
                     um verdadeiro museu a céu aberto[...]
-
+                    
                 </a>
             </div>
         </section>
-
-
+        
+        <section>
+            <div class="small"> <a href=""><img src="https://midias.correiobraziliense.com.br/_midias/jpg/2021/11/24/675x450/1_241121mj_01-7110408.jpg?20211207195459?20211207195459"> </a>
+                <h3 class="subtitulo"><a href="">Defesa Civil abre comportas do Paranoá e alerta para risco de alagamento
+                </a>
+                    <div class="notindiv"> Aviso! </div>
+                </h3>
+    
+                <a href="">Em nota, a Defesa Civil do DF emitiu alerta sobre risco de alagamento com abertura em 60 cm de 
+                    comportas do Lago Paranoá, nesta segunda-feira (20/12), sobre risco de alagamentos provocados pela abertura
+                     de 60 cm das comportas do Lago Paranoá durante a tarde. O órgão pede que as pessoas evitem as margens do 
+                     rio abaixo da barragem.[...]
+                </a>
+            </div>
+        </section>
+        
         <section>
             <div class="small"> <a href=""><img src="Imagens/acidente-620x620.jpg"> </a>
-                <h3 class="subtitulo"><a href="">Homem embriagado é preso após causar acidente na EPNB</a> <div class="notindiv">
+                <h3 class="subtitulo"><a href="">Homem embriagado é preso após causar acidente na EPNB</a>
+                    <div class="notindiv">
                         Noticia! </div>
-                </h3>
+                    </h3>
 
                 <a href="">Um homem foi preso em flagrante após
                     causar acidente na manhã desta segunda-feira (09) na EPNB. Após fazer o teste do etilômetro, foi
                     constatado
-                    1.05 mg/L de álcool no sangue, quantidade alta e suficiente para acusar embriaguez.[...]
+                    1.05 mg/L de álcool no sangue, quantidade alta e suficiente para acusar embriaguez. A ocorrência foi 
+                    atendida por uma equipe do Batalhão de Policiamento Rodoviário (BPRV), batalhão especializado da PMDF.[...]
                 </a>
             </div>
         </section>
         <section>
             <div class="small"> <a href=""><img src="Imagens/EPT-V-768x576.jpg"> </a>
-                <h3 class="subtitulo"><a href="">Detran-DF oferece aulas gratuitas de revisão para candidatos à CNH</a> <div
-                        class="notindiv"> Aviso! </div>
+                <h3 class="subtitulo"><a href="">Detran-DF oferece aulas gratuitas de revisão para candidatos à CNH</a>
+                    <div class="notindiv"> Aviso! </div>
                 </h3>
 
                 <a href="">O Departamento de Trânsito do Distrito Federal (Detran-DF), por meio da Escola Pública de
@@ -65,9 +90,25 @@
             </div>
         </section>
         <section>
+            <div class="small"> <a href=""><img src="https://www.rbsdirect.com.br/imagesrc/25158741.jpg?w=1400"> </a>
+                <h3 class="subtitulo"><a href="">Falta de iluminação no Paranoá aumenta insegurança e preocupação
+                </a>
+                    <div class="notindiv"> Notícia! </div>
+                </h3>
+
+                <a href="">A falta de iluminação no Paranoá, no bairro Jardim Alegre, tem causado medo entre os moradores.
+                     Três postes de luz da região estão apagados há mais de dois meses, transformando o trecho em um local 
+                     vulnerável para assaltos e furtos.
+                    [...]
+                </a>
+            </div>
+        </section>
+        <section>
             <div class="small"> <a href=""><img src="Imagens/54197238452-04fa96a40a-c.avif" style="height: 46vh;"> </a>
-                <h3 class="subtitulo"><a href="">Fux vota pela responsabilização das redes sociais e empresas de tecnologia pelo
-                    conteúdo que publicam</a> <div class="notindiv"> Notícia! </div>
+                <h3 class="subtitulo"><a href="">Fux vota pela responsabilização das redes sociais e empresas de
+                        tecnologia pelo
+                        conteúdo que publicam</a>
+                    <div class="notindiv"> Notícia! </div>
                 </h3>
 
                 <a href="">O STF - Supremo Tribunal Federal retomou nesta quarta-feira (11) o julgamento sobre o Marco
@@ -78,32 +119,42 @@
         </section>
         <section>
             <div class="small"> <a href=""><img src="Imagens/metro brasilia.webp" style="height: 46vh;"> </a>
-                <h3 class="subtitulo"><a href="">Expresso Cultural: Primeira linha de metrô temático de Brasília é inaugurada</a> <div class="notindiv"> Notícia! </div>
+                <h3 class="subtitulo"><a href="">Expresso Cultural: Primeira linha de metrô temático de Brasília é
+                        inaugurada</a>
+                    <div class="notindiv"> Notícia! </div>
                 </h3>
 
-                <a href=""> Brasília ganhou um toque de arte e cultura em seus transportes públicos. A nova linha temática do metrô, chamada de Expresso Cultural, foi 
-                    inaugurada nesta quarta-feira (12). Decorada com obras de artistas locais e espaços interativos, a iniciativa promete transformar o trajeto dos 
+                <a href=""> Brasília ganhou um toque de arte e cultura em seus transportes públicos. A nova linha
+                    temática do metrô, chamada de Expresso Cultural, foi
+                    inaugurada nesta quarta-feira (12). Decorada com obras de artistas locais e espaços interativos, a
+                    iniciativa promete transformar o trajeto dos
                     passageiros em uma experiência única de aprendizado e lazer. [...]
                 </a>
             </div>
         </section>
         <section>
-            <div class="small"> <a href=""><img src="Imagens/Chuva.avif"> </a>
-                <h3 class="subtitulo"><a href="">Alerta de Temporal: Defesa Civil emite alerta para tempestades em Brasília
-                </a> <div class="notindiv"> Aviso! </div>
+            <div class="small"> <a href=""><img
+                        src="https://www.contextoexato.com.br/foto_noticias_capa/1557444591.jpeg"> </a>
+                <h3 class="subtitulo"><a href="">Alerta de Temporal: Defesa Civil emite alerta para tempestades em
+                        Brasília
+                    </a>
+                    <div class="notindiv"> Aviso! </div>
                 </h3>
 
-                <a href=""> A Defesa Civil do Distrito Federal emitiu um alerta para a possibilidade de tempestades severas 
-                    em diversas regiões de Brasília. A previsão inclui chuva intensa, ventos fortes e eventual queda de granizo, 
-                    principalmente na tarde e noite desta terça-feira (12). A população deve tomar precauções para evitar 
+                <a href=""> A Defesa Civil do Distrito Federal emitiu um alerta para a possibilidade de tempestades
+                    severas
+                    em diversas regiões de Brasília. A previsão inclui chuva intensa, ventos fortes e eventual queda de
+                    granizo,
+                    principalmente na tarde e noite desta terça-feira (12). A população deve tomar precauções para
+                    evitar
                     acidentes e prejuízos. [...]
                 </a>
             </div>
         </section>
     </div>
     <footer>
-        <p class="copyright">&copy;2003-2024 JornalBrasília. Todos os direitos reservados.</p>
+        <p class="copyright">&copy;2003-2024 JornalLocal. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
