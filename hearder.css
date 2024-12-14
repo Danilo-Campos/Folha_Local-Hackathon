@@ -1,5 +1,5 @@
 header {
-    height: 4.45em;
+    height: 4.3em;
     background-color: seagreen;
     display: flex;
     justify-content: center;
@@ -10,9 +10,9 @@ header {
 }
 
 header img{
-    max-width: 135px;
+    max-width: 90px;
     border-radius: 0%;
-    padding-top: 8px;
+    padding-bottom: 0.5em;
 }
 .logo{
     position: absolute;
@@ -39,7 +39,7 @@ nav {
 #container-link{
     display: none;
     position: absolute;
-    top: 4.45em;
+    top: 4em;
     right: 1vh;
     background-color: whitesmoke;
     border: 1px solid #ddd;

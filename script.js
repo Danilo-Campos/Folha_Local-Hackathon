@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fechar o contêiner clicando fora dele
     document.addEventListener("click", function (event) {
-        if (!faleConoscoContainer.contains(event.target) && event.target !== faleconosco-link) {
-            faleConoscoContainer.classList.remove("show");
+        if (!faleconosco-link.contains(event.target) && event.target !== container-link) {
+            container-link.classList.remove("show");
         }
     });
 });
