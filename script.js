@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
         faleConoscoContainer.classList.toggle("show");
     });
 
-    // Fechar o contêiner clicando fora dele
-    document.addEventListener("click", function (event) {
-        if (!faleconosco-link.contains(event.target) && event.target !== container-link) {
-            container-link.classList.remove("show");
-        }
-    });
+    //Fechar o contêiner clicando fora dele
+document.addEventListener("click", function (event) {
+    if (!faleConoscoLink.contains(event.target) && !faleConoscoContainer.contains(event.target)) {
+        faleConoscoContainer.classList.remove("show");
+    }
+});
 });
