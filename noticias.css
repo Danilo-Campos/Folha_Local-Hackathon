@@ -59,12 +59,20 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+header {
+    max-height: 5.5em;
+    min-height: 5.5em;
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.7em;
+    padding: 0 1em;
+    position: relative;
+}
 @media (max-width: 840px) {
-    body{
-        margin: 0 0.4em;
-    }
-    header, nav{
-        margin: 0;
+    header{
+        justify-content: start;
     }
     p{
         margin: 0 1.5em;
@@ -73,15 +81,22 @@ footer {
         margin-bottom: 1em;
         left: 20%;
         transform: translateX(-20%);
+        margin-left: 5em;
     }
     nav {
         position: absolute;
         right: 20%;
         transform: translateX(20%);
     }
-
+    h1{
+        margin: 0 8px;
+        line-height: 1.2em;
+    }
 }
 @media (max-width: 500px) {
+    .confia{
+        text-align: start;
+    }
     p{
         margin: 0 1.5em;
     }
@@ -92,7 +107,17 @@ footer {
         font-size: 15px;
     }
 }
-    @media (max-width: 320px) {
+@media (max-width: 430px) {
+    .logo {
+        margin-left: 2em;
+    }
+}
+    @media (max-width: 340px) {
+        .confia{
+            h1{
+                font-size: 1.7em;
+            }
+        }
         .logo {
             left: 10%;
             transform: translateX(-10%);
