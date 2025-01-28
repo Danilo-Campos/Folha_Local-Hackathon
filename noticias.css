@@ -59,14 +59,53 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 840px) {
+    body{
+        margin: 0 0.4em;
+    }
+    header, nav{
+        margin: 0;
+    }
     p{
         margin: 0 1.5em;
     }
+    .logo {
+        margin-bottom: 1em;
+        left: 20%;
+        transform: translateX(-20%);
+    }
+    nav {
+        position: absolute;
+        right: 20%;
+        transform: translateX(20%);
+    }
 
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     p{
         margin: 0 1.5em;
+    }
+    a img {
+        width: 60px;
+    }
+    .abas {
+        font-size: 15px;
+    }
+}
+    @media (max-width: 320px) {
+        .logo {
+            left: 10%;
+            transform: translateX(-10%);
+        }
+        nav {
+            position: absolute;
+            right: 10%;
+            transform: translateX(10%);
+        }
+        a img {
+            width: 50px;
+        }
+        .abas {
+            font-size: 12px;
     }
 }

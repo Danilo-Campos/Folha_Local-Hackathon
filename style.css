@@ -6,24 +6,23 @@ body {
 }
 
 header {
-    height: 5.6em;
     background-color: seagreen;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.7em;
-    padding: 0 1em;
+    padding: 2.2em 1em;
     position: relative;
-}
-
-header img {
-    max-width: 120px;
-    border-radius: 0%;
-    padding-bottom: 0.4em;
 }
 
 .logo {
     position: absolute;
+}
+
+header img {
+    max-width: 6em;
+    border-radius: 0%;
+    padding-bottom: 0.4em;
 }
 
 nav {
@@ -33,10 +32,11 @@ nav {
 }
 
 .abas {
-    font-size: 20px;
+    font-size: 30px;
     color: whitesmoke;
     text-decoration: none;
     word-spacing: normal;
+    margin: 0 1em;
 }
 
 .abas:hover {
@@ -65,12 +65,6 @@ h1 {
     border: solid 1px rgba(173, 216, 230, 0.5);
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
 }
-
-span {
-    font-size: 17px;
-    /* margin-right: 10px;*/
-}
-
 
 #noticiaprincipal {
     margin: 1em;
@@ -151,7 +145,7 @@ img {
 .small a {
     display: block;
     word-spacing: 2px;
-   /* margin-right: 18vh; --Ferrou a responsividade e eu não sei qual era a função dessa propriedade pro codigo comum--*/
+    /* margin-right: 18vh; --Ferrou a responsividade e eu não sei qual era a função dessa propriedade pro codigo comum--*/
 }
 
 .subtitulo {
@@ -229,49 +223,33 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(245, 245, 245, 0.930);
 }
-.bigsmall{
+
+.bigsmall {
     line-height: 1.4;
     margin: 0 17vh;
     padding: 0;
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .logo {
-        order: 1;
-        margin-bottom: 1em;
-    }
-
-    nav {
-        order: 2;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1em;
-    }
-
-    .bigsmall{
+@media (max-width:1570) {
+    .bigsmall {
         margin: 0 5vw;
         flex-direction: column;
     }
+
     .small img {
         width: 100%;
         height: auto;
         float: none;
         margin-right: 0;
     }
-    
+
     .small {
         padding: 10px;
         margin: 10px 0;
         box-shadow: none;
     }
-    
+
     #noticiaprincipal {
         margin: 10px 0;
     }
@@ -280,59 +258,154 @@ img {
         width: 100%;
         box-shadow: none;
     }
-    
+
     h3 {
         font-size: 18px;
+        margin: 0;
     }
-    
+
     a {
         font-size: 16px;
     }
+
     .notindiv {
-    display: none;
-}
-
-.nav-start {
-    display: none;
-}
-.big {
-    margin: 0 5vw;
-    flex-direction: column;
-}
-img{
-    width: 100%;
-}
-a{
-    padding: auto;
-}
-h3{
-    margin: 0;
-}
-body{
-    margin: 0 0.5rem;
-    padding: 0 2.5em;
-}
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 0.5em;
+        display: none;
     }
-    
+
+    .nav-start {
+        display: none;
+    }
+
+    .big {
+        margin: 0 5vw;
+        flex-direction: column;
+    }
+
+    img {
+        max-height: 730px;
+    }
+
+    section a {
+        margin-top: 1em;
+        padding: auto;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1520px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        left: 10%;
+        transform: translateX(-10%);
+    }
+
+    nav {
+        position: absolute;
+        right: 10%;
+        transform: translateX(10%);
+    }
+
+    .bigsmall {
+        margin: 0 5vw;
+        flex-direction: column;
+    }
+
+    .small img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-right: 0;
+    }
+
+    .small {
+        padding: 10px;
+        margin: 10px 0;
+        box-shadow: none;
+    }
+
+    #noticiaprincipal {
+        margin: 10px 0;
+    }
+
+    #imgprincipal {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .notindiv {
+        display: none;
+    }
+
+    .nav-start {
+        display: none;
+    }
+
+    .big {
+        margin: 0 5vw;
+        flex-direction: column;
+    }
+
+    .small a img {
+        min-height: 800px;
+    }
+
+    a {
+        padding: auto;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
     header img {
         max-width: 80px;
     }
-    
+
     .abas {
-        font-size: 16px;
+        font-size: 17px;
+    }
+
+    nav {
+        position: absolute;
+        right: 5%;
+        transform: translateX(5%);
+    }
+
+    .logo {
+        left: 5%;
+        transform: translateX(-5%);
     }
 
     h3 {
         font-size: 16px;
     }
 
-    .small img {
-        border-radius: 10px;
+    .small a img {
+        min-height: 300px;
     }
 
     footer {
@@ -347,24 +420,41 @@ body{
     .nav-start {
         display: none;
     }
-    .big{
+
+    .big {
         flex-direction: column;
         margin: 0 5vw;
     }
-    .bigsmall{
+
+    .bigsmall {
         margin: 0 5vw;
         flex-direction: column;
     }
-    img{
-        width: 100%;
-    }
-    a{
-        padding: auto;
-    }
-    h3{
+
+    h3 {
         margin: 0;
     }
-    body{
-        margin: 0 0.5rem;
-        padding: 0 2.5em;
-    }}
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .abas {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 380px) {
+    .abas {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 70px;
+    }
+}
